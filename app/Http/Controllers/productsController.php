@@ -30,6 +30,14 @@ class productsController extends Controller
         $sp->description = $request->description;
         $sp->price = $request->price;
         $sp->quantity = $request->quantity;
+        $sp->quantity = $request->size;
+        $sp->quantity = $request->quantity;
+        $sp->quantity = $request->quantity;
+        $sp->quantity = $request->quantity;
+        $sp->quantity = $request->quantity;
+        $sp->quantity = $request->quantity;
+        $sp->quantity = $request->quantity;
+        $sp->quantity = $request->quantity;
         $sp->cate_id = $request->cate_id;
         $sp->discount_id = $request->discount_id;
         if ($sp->save()) {
