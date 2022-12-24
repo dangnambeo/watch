@@ -1,0 +1,16 @@
+.link-item {
+    color: #636e72;
+}
+.link-item:hover {
+    color: #2980b9;
+}
+
+.select2-dropdown {
+    z-index: 9001;
+}
+.list-group-item{
+    font-weight: bold;
+}
+.active-item{
+    color: #27ae60;
+}
