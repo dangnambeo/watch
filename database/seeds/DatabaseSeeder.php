@@ -26,10 +26,10 @@ class DatabaseSeeder extends Seeder
         ]);
 
         DB::table('category')->insert([
-            ['cate_tittle' => 'Sofa Giường'],
-            ['cate_tittle' => 'Sofa Góc'],
-            ['cate_tittle' => 'Sofa 2-3 chỗ ngồi'],
-            ['cate_tittle' => 'Ghế thư giãn']
+            ['cate_tittle' => 'Đồng hồ Nam'],
+            ['cate_tittle' => 'Đồng hồ Nữ'],
+            ['cate_tittle' => 'Đồng hồ đôi'],
+            ['cate_tittle' => 'Đồng hồ trẻ em']
         ]);
     }
 }

@@ -57,12 +57,7 @@
                     </button>
                 </div>
                 <div class="text-center p-t-136">
-                    @if(count($user) <= 0)
-                        <a class="txt2" href="#">
 
-                            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-                        </a>
-                    @endif
                 </div>
             </form>
         </div>

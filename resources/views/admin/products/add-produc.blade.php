@@ -15,7 +15,7 @@
                 <div class="form-group">
                     <div class="row">
                         <div class="col-md-3">
-                            <label for="cate">Loại sản phẩm</label>
+                            <label for="cate">Kiểu dáng</label>
                             <select id="cate" class="select2 form-control" name="cate_id">
                                 <option>Chọn loại sản phẩm</option>
                                 @foreach($cate as $cate_sp)
@@ -50,10 +50,50 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="diameter">Đường kính mặt</label>
+                        <input class="form-control" id="name" name="diameter" type="text">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="face_material">Chất liệu mặt</label>
+                        <input class="form-control" id="name" name="face_material" type="text">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="size">Size dây:</label>
+                        <input class="form-control" id="price" name=" size" type="number">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="wire_material">Chất liệu dây</label>
+                        <input class="form-control" id="name" name="wire_material" type="text">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="shell_material">Chất liệu vỏ</label>
+                        <input class="form-control" id="name" name="shell_material" type="text">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="origin_id">Xuất xứ</label>
+                        <select class="select2 form-control" name=" percent" id="origin_id">
+                            <option></option>
+                            <option value="1">JaPan</option>
+                            <option value="2">China</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="insurance">Bảo hành</label>
+                        <input class="form-control" id="name" name="insurance" type="text">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="waterproof">Chống nước</label>
+                        <input class="form-control" id="name" name="waterproof" type="text">
+                    </div>
+                </div>
+                <!--
                 <div class="form-group">
                     <label for="ckeditor" class="control-label">Mô tả sản phẩm</label>
                     <textarea style="resize: none" name="description" class="form-control" id="ckeditor" rows="8"></textarea>
                 </div>
+                -->
                 <div class="form-group">
                     <label class="control-label" for="img">Ảnh Sản phẩm:</label>
                     <input type="file" name="img" id="img" class="dropify" data-height="300">

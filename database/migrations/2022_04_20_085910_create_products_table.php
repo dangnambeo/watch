@@ -17,16 +17,21 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('price');
+            $table->text('description')->nullable();
             $table->string('img',250)->nullable();
             $table->string('face_material')->nullable();
             $table->string('shell_material')->nullable();
             $table->string('wire_material')->nullable();
+            $table->string('power')->nullable();
+            $table->string('waterproof')->nullable();
             $table->integer('quantity');
             $table->integer('diameter')->nullable(); /* Đường kính */
             $table->integer('resistance')->nullable();
             $table->integer('size')->nullable();
             $table->integer('insurance')->nullable();
             $table->integer('cate_id');
+            $table->integer('origin_id');
+         //   $table->integer('img_id');
             $table->integer('discount_id')->nullable();
             $table->timestamps();
         });
