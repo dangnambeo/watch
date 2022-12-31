@@ -19,18 +19,18 @@ class CreateProductsTable extends Migration
             $table->integer('price');
             $table->text('description')->nullable();
             $table->string('img',250)->nullable();
-            $table->string('face_material')->nullable();
-            $table->string('shell_material')->nullable();
-            $table->string('wire_material')->nullable();
-            $table->string('power')->nullable();
-            $table->string('waterproof')->nullable();
+            $table->string('face_material')->nullable();/* Chất liệu mặt */
+            $table->string('shell_material')->nullable();/*Chất liệu vỏ */
+            $table->string('wire_material')->nullable();/* Chất liệu dây */
+            $table->string('power')->nullable();/* Năng lương */
+            $table->string('waterproof')->nullable(); /* Chống nước */
             $table->integer('quantity');
             $table->integer('diameter')->nullable(); /* Đường kính */
-            $table->integer('resistance')->nullable();
-            $table->integer('size')->nullable();
-            $table->integer('insurance')->nullable();
+         //   $table->integer('resistance')->nullable();/*??? */
+            $table->integer('size')->nullable();/* Size dây */
+            $table->integer('insurance')->nullable();/* Bảo hành */
             $table->integer('cate_id');
-            $table->integer('origin_id');
+            $table->integer('origin_id');/* Xuất xứ */
          //   $table->integer('img_id');
             $table->integer('discount_id')->nullable();
             $table->timestamps();

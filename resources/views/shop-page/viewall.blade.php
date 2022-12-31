@@ -27,15 +27,6 @@
                                         <span class="price-new">{{ number_format(($list ->price)-(($list->price)*($list->discount ->percent)/100)) }} đ</span>
                                     @endif
                                 </div>
-                                <div class="cart">
-                                    <a onclick="AddCart({{ $list->id }})" href="javascript:" class="add_to_cart">
-                                        <lord-icon
-                                            src="https://cdn.lordicon.com/rmzhcgbh.json"
-                                            trigger="hover"
-                                            style="width:40px;height:40px">
-                                        </lord-icon>
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>

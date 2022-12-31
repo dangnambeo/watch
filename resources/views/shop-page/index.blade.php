@@ -41,7 +41,7 @@
         <div class="products">
             <h2 class="heading">
                 <a href="{{ route('viewall') }}">
-                    Ghế sofa
+                  SẢN PHẨM NỔI BẬT
                 </a>
             </h2>
             <div class="row">
@@ -65,15 +65,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                <div class="cart">
-                                    <button type="submit" onclick="AddCart({{ $list->id }})" class="add_to_cart">
-                                        <lord-icon
-                                                src="https://cdn.lordicon.com/rmzhcgbh.json"
-                                                trigger="hover"
-                                                style="width:40px;height:40px">
-                                        </lord-icon>
-                                    </button>
-                                </div>
+
                             </div>
                         </div>
                     </div>

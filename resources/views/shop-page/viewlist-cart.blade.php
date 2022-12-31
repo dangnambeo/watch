@@ -2,7 +2,7 @@
 @extends('shop-page.layout.header')
 @section('section')
     <div class="section">
-        <div class="products-item">
+        <div class="products-item" style="width: 100%">
             <h2 class="heading">Giỏ hàng của bạn</h2>
         </div>
     </div>

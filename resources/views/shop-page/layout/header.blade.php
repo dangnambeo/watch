@@ -14,9 +14,6 @@
                             <a href="{{ route('viewpage',$list->id) }}" class="item-link">{{ $list -> cate_tittle }}</a>
                         </li>
                     @endforeach
-                    <li class="menu-item">
-                        <a href="{{ route('blog') }}" class="item-link">BLOG</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -34,7 +31,7 @@
         </div>
 
         <div class="cart col-md-1">
-            <a href="#" class="icon">
+            <a href="{{ route('listCart') }}" class="icon">
                 <lord-icon
                         src="https://cdn.lordicon.com/cllunfud.json"
                         trigger="hover"
@@ -70,9 +67,7 @@
                     @endif
                 </div>
                 <hr>
-                <div class="tranps-cart">
-                    <a href="{{ route('listCart') }}">Xem giỏ hàng</a>
-                </div>
+
             </div>
 
         </div>

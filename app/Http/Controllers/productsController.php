@@ -30,14 +30,15 @@ class productsController extends Controller
         $sp->description = $request->description;
         $sp->price = $request->price;
         $sp->quantity = $request->quantity;
-        $sp->quantity = $request->size;
-        $sp->quantity = $request->quantity;
-        $sp->quantity = $request->quantity;
-        $sp->quantity = $request->quantity;
-        $sp->quantity = $request->quantity;
-        $sp->quantity = $request->quantity;
-        $sp->quantity = $request->quantity;
-        $sp->quantity = $request->quantity;
+        $sp->face_material = $request->face_material;
+        $sp->shell_material = $request->shell_material;
+        $sp->wire_material = $request->wire_material;
+        $sp->power = $request->power;
+        $sp->waterproof = $request->waterproof;
+        $sp->diameter = $request->diameter;
+        $sp->size = $request->size;
+        $sp->origin_id = $request->origin_id;
+        $sp->insurance = $request->insurance;
         $sp->cate_id = $request->cate_id;
         $sp->discount_id = $request->discount_id;
         if ($sp->save()) {
@@ -62,6 +63,15 @@ class productsController extends Controller
         $sp->description = $request->description;
         $sp->price = $request->price;
         $sp->quantity = $request->quantity;
+        $sp->face_material = $request->face_material;
+        $sp->shell_material = $request->shell_material;
+        $sp->wire_material = $request->wire_material;
+        $sp->power = $request->power;
+        $sp->waterproof = $request->waterproof;
+        $sp->diameter = $request->diameter;
+        $sp->size = $request->size;
+        $sp->origin_id = $request->origin_id;
+        $sp->insurance = $request->insurance;
         $sp->cate_id = $request->cate_id;
         $sp->discount_id = $request->discount_id;
         if ($sp->save()) {

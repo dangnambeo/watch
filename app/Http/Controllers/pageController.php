@@ -37,11 +37,14 @@ class pageController extends Controller
     }
     public function viewproducts($id){
         $sp_page = products::leftjoin('orders','orders.product_id','=','products.id')
-            ->groupBy('products.id','products.name','products.img','products.cate_id','products.quantity','products.price','products.description','products.discount_id')
+            ->groupBy   ('products.id','products.name','products.img','products.cate_id','products.quantity','products.price','products.description','products.discount_id','products.diameter',
+                        'products.face_material','products.shell_material','products.wire_material','products.power','products.waterproof','products.insurance','products.origin_id','products.size'
+                        )
             ->select(
                 'products.id as id','products.name as name','products.img as img','products.cate_id as cate_id','products.quantity as quantity','products.price as price','products.description as description',
-                'products.discount_id as discount_id',
-                DB::raw('Sum(orders.number) as sl_ban')
+                'products.discount_id as discount_id','products.diameter',
+                DB::raw('Sum(orders.number) as sl_ban'),
+                'products.face_material','products.shell_material','products.wire_material','products.power','products.waterproof','products.insurance','products.origin_id','products.size'
             )->find($id);
         $sp_other = products::all()->random()->paginate(6);
         //dd($price_sp);

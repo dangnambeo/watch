@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>SOFA-T</title>
+    <title>WATCH-Sh</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Responsive bootstrap 4 admin template" name="description" />
     <meta content="Coderthemes" name="author" />
@@ -260,7 +260,7 @@
             <div class="help-box">
                 <h5 class="text-muted mt-0">Hỗ trợ ?</h5>
                 <p class="___class_+?63___"><span class="text-info">Email:</span>
-                    <br /> sofa.t@gmail.com
+                    <br /> manhwatch@gmail.com
                 </p>
                 <p class="mb-0"><span class="text-info">Call:</span>
                     <br /> 02400000000

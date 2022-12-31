@@ -35,11 +35,19 @@
                 </div>
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <label for="quantity">Số lượng sản phẩm:</label>
                             <input class="form-control" id="quantity" name=" quantity" type="number">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
+                            <label for="origin_id">Xuất xứ</label>
+                            <select class="select2 form-control" name="origin_id" id="origin_id">
+                                <option></option>
+                                <option value="1">JaPan</option>
+                                <option value="2">China</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
                             <label for="discount_id">Ưu đãi:</label>
                             <select id="discount_id" class="select2 form-control" name="discount_id">
                                 <option value="1" selected>Không có ưu đãi</option>
@@ -53,16 +61,23 @@
                 <div class="row">
                     <div class="col-md-3">
                         <label for="diameter">Đường kính mặt</label>
-                        <input class="form-control" id="name" name="diameter" type="text">
+                        <input class="form-control" id="name" name="diameter" type="number">
                     </div>
                     <div class="col-md-3">
                         <label for="face_material">Chất liệu mặt</label>
                         <input class="form-control" id="name" name="face_material" type="text">
                     </div>
                     <div class="col-md-3">
+                        <label for="power">Năng lượng sử dụng</label>
+                        <input class="form-control" id="name" name="power" type="text">
+                    </div>
+                    <div class="col-md-3">
                         <label for="size">Size dây:</label>
                         <input class="form-control" id="price" name=" size" type="number">
                     </div>
+
+                </div>
+                <div class="row">
                     <div class="col-md-3">
                         <label for="wire_material">Chất liệu dây</label>
                         <input class="form-control" id="name" name="wire_material" type="text">
@@ -72,20 +87,12 @@
                         <input class="form-control" id="name" name="shell_material" type="text">
                     </div>
                     <div class="col-md-3">
-                        <label for="origin_id">Xuất xứ</label>
-                        <select class="select2 form-control" name=" percent" id="origin_id">
-                            <option></option>
-                            <option value="1">JaPan</option>
-                            <option value="2">China</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
                         <label for="insurance">Bảo hành</label>
-                        <input class="form-control" id="name" name="insurance" type="text">
+                        <input class="form-control" id="name" name="insurance" type="number">
                     </div>
                     <div class="col-md-3">
                         <label for="waterproof">Chống nước</label>
-                        <input class="form-control" id="name" name="waterproof" type="text">
+                        <input class="form-control" id="name" name="waterproof" type="number">
                     </div>
                 </div>
                 <!--

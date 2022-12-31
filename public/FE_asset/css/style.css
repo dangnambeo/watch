@@ -80,7 +80,7 @@ div.header-section .search {
     color: red;
 }
 .cart:hover .cart-sp{
-    display: block;
+    display: none;
 }
 .cart button{
     border: solid 1px #ff7675;
@@ -201,23 +201,45 @@ div.header-section .search {
     padding:1rem 0;
   }
   /* Sản phẩm */
-  .products, .products-item{
+.prod{
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: flex;
+}
+  .products{
       background: #f9f9f9;
       border:.1rem solid rgba(0,0,0,.1);
       padding: 10px;
       border-radius: 5px;
       margin-bottom: 15px;
   }
+.products-item{
+    background: #f9f9f9;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 65%;
+    margin-right: 15px;
+}
+.product-detail{
+    background: #f9f9f9;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 35%;
+}
   .products a{
     text-decoration: none;
-    color: #a29bfe;
+    color: #ff9f43;
   }
   .products a:hover{
       color: #be2edd;
   }
   .products h2, .products-item h2{
       font-size: 22px;
-      color: #a29bfe;
+      color: #ff9f43;
       font-weight: bold;
       text-transform: uppercase;
       border-bottom: solid 2px #b2bec3;
@@ -254,7 +276,7 @@ div.header-section .search {
     font-size: 15px;
   }
   .box-products h5 a:hover{
-      color: #a29bfe;
+      color: #ff9f43;
 }
 .box-products .price .discount-price .price-old{
     font-weight: bold;
@@ -264,7 +286,7 @@ div.header-section .search {
 }
 .box-products .price .price-new{
     font-weight: bold ;
-    color: #7C4DFF;
+    color: #ffbe76;
     font-size: 20px;
 }
 .box-products .cart{
@@ -297,17 +319,17 @@ div.header-section .search {
       margin: 10px;
       font-style: italic;
       font-weight: bold;
-      color: #7C4DFF;
+      color: #ffbe76;
       font-size: 22px;
   }
   .price-sale .sale{
-    font-weight: bold;
-    font-size: 10px;
-    border: solid;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #fff;
-    background: #5E35B1;
+      font-weight: bold;
+      font-size: 10px;
+      border: solid;
+      padding: 13px 10px;
+      border-radius: 50%;
+      color: hsl(0deg 0% 100%);
+      background: #fa8231;
   }
   .cart-produc a{
       text-decoration: none;
@@ -316,39 +338,39 @@ div.header-section .search {
     text-transform: uppercase;
   }
   .cart-produc .purchase-cart{
-      width: 50%;
+      width: 100%;
       border: solid 1px#D1C4E9;
       text-align: center;
-      background: #7C4DFF;
+      background: #ffbe76;
       padding: 15px;
       margin-bottom: 15px;
       border-radius: 5px;
   }
   .cart-produc .purchase-phone a{
-      color: #7C4DFF;
+      color: #fff;
   }
   .cart-produc .purchase-phone a:hover{
-    color: #7C4DFF;
+    color: #ffbe76;
 }
   .cart-produc .purchase-cart a:hover{
       color: #fff;
   }
 .cart-produc .purchase-phone{
-    width: 50%;
+    width: 100%;
     border: solid 1px#D1C4E9;
     text-align: center;
-    background: #D1C4E9;
+    background: #2d98da;
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 5px;
 }
   .cart-produc .purchase-phone .phone{
-    color: #78909C;
+    color: red;
     text-transform: uppercase;
     font-weight: bold;
   }
 .cart-table, .total-bill{
-    background: #f9f9f9;
+    background: #fff;
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 5px;
@@ -404,9 +426,9 @@ td span.del {
     color: #d63031;
 }
   .description{
-    background: #7C4DFF;
+    background: #ffbe76;
     width: 30%;
-    border:.1rem solid #7C4DFF;
+    border:.1rem solid #ffbe76;
     padding: 10px;
     cursor: pointer;
   }
@@ -418,7 +440,7 @@ td span.del {
   }
 .main-description{
     background: #f9f9f9;
-    border:.1rem solid #7C4DFF;
+    border:.1rem solid #ffbe76;
     padding: 10px;
     border-radius: 0 5px 5px 5px;
     margin-bottom: 15px;
@@ -470,7 +492,7 @@ td span.del {
 }
 .new h2{
     font-size: 22px;
-    color: #a29bfe;
+    color: #ff9f43;
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: solid 2px #b2bec3;
@@ -506,7 +528,7 @@ td span.del {
 .new .row .item-new .box .box-products .read-blog a{
     text-decoration: none;
     font-weight: bold;
-    color: #a29bfe;
+    color: #ff9f43;
     font-size: 20px;
 }
 .new .row .item-new .box .box-products .read-blog a:hover{
