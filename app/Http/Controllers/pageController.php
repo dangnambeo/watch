@@ -148,10 +148,10 @@ class pageController extends Controller
             }
         }
         $data = $request->all();
-        $email= $data['email']??'';
+   //     $email= $data['email']??'';
 
-        Mail::to($email)->send(new \App\Mail\SendMail(['emails'=>$email]));
-        Session::flash('flash_message','Send message successfully');
+   //     Mail::to($email)->send(new \App\Mail\SendMail(['emails'=>$email]));
+    //    Session::flash('flash_message','Send message successfully');
         //dd('ok');
         alert()->toast('Mua hàng thành công', 'success')->persistent(false)->autoClose(1200);
         return redirect(route('index'));

@@ -114,7 +114,7 @@
             <div class="card-box">
                 <h4 class="header-title mb-4">Top 5 Sản phẩm bán chạy</h4>
                 <div class="table-responsive">
-                    <table class="table table-centered m-0">
+                    <table id="datatable" class="table table-centered m-0  dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                         <thead class="thead-light">
                         <tr>
                             <th>Hình ảnh</th>
