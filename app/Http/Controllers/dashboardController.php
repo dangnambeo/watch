@@ -16,12 +16,12 @@ class dashboardController extends Controller
         $bill_day=bill::whereDay('created_at', Carbon::now()->day)->get();
         $bill_month=bill::whereMonth('created_at', Carbon::now()->month)->get();
         $sp_bill = products::leftjoin('orders','orders.product_id','=','products.id')
-            ->leftjoin('bill','bill.id','=','orders.bill_id')
-            ->where('bill.status','!=',3)
-            ->groupBy('products.id','products.name','products.img','products.cate_id','products.quantity','products.price','products.description','products.discount_id','bill.created_at','bill.status')
+            //->leftjoin('bill','bill.id','=','orders.bill_id')
+            //->where('bill.status','!=',3) | ,'bill.created_at','bill.status' | ,'bill.created_at as created_bill','bill.status'
+            ->groupBy('products.id','products.name','products.img','products.cate_id','products.quantity','products.price','products.description','products.discount_id')
             ->select(
                 'products.id as id','products.name as name','products.img as img','products.cate_id as cate_id','products.quantity as quantity','products.price as price','products.description as description',
-                'products.discount_id as discount_id','bill.created_at as created_bill','bill.status as status',
+                'products.discount_id as discount_id',
                 DB::raw('Sum(orders.number) as sl_ban')
             )->orderBy('sl_ban','desc')
             ->paginate(5);
